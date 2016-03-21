@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  playMusic();
+  // playMusic();
   $('.ryu').mouseenter(function() {
     $('.ryu-still').hide();
     $('.ryu-ready').show();
