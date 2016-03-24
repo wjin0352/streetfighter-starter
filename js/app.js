@@ -34,14 +34,14 @@ $(document).ready(function(){
   pressX();
   unPressX();
 
-  // press x to look cool
+
   function pressX () {
     $(this).keydown(function(event) {
       if ( $('.ryu-still').is(':visible') && (event.which == 88)){
         $('.ryu-still').hide();
         $('.ryu-cool').show();
       } else if (event.which == 88) {
-          console.log(event);
+          // console.log(event);
           // event.preventDefault();
           $('.ryu-ready').hide();
           $('.ryu-cool').show();
@@ -49,7 +49,6 @@ $(document).ready(function(){
     });
   }
 
-  // press x to stop looking cool
   function unPressX () {
     $(this).keyup(function(event) {
       if ($('.ryu-cool').is(':visible') && (event.which == 88)){
